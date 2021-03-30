@@ -1,37 +1,96 @@
-## Welcome to GitHub Pages
+<font size = 10 face="微软雅黑">**定制算法更新日志**</font>
 
-You can use the [editor on GitHub](https://github.com/DH-Algorithm-Group-Development/DH-Algorithm-Group-Development.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+- [2021年一季度版本](#2021年一季度版本)
+  - [已完成](#已完成)
+    - [交互绘制截面并切割点云功能](#交互绘制截面并切割点云功能)
+    - [区域外圈生成轮廓功能](#区域外圈生成轮廓功能)
+    - [路径计算和偏移功能](#路径计算和偏移功能)
+    - [第三方库配置例程](#第三方库配置例程)
+    - [点云向柱面投影功能](#点云向柱面投影功能)
+    - [提取点云边缘工具](#提取点云边缘工具)
+    - [在线引导例程](#在线引导例程)
+    - [正向投影测量工具](#正向投影测量工具)
+    - [CAD路径偏移功能](#cad路径偏移功能)
+    - [点云填补工具](#点云填补工具)
+- [2021年二季度版本](#2021年二季度版本)
+  - [已完成](#已完成-1)
+  - [进行中](#进行中)
+    - [简易激光三角法标定工具](#简易激光三角法标定工具)
+    - [点云自动配准工具](#点云自动配准工具)
+    - [相机采图工具](#相机采图工具)
+  - [计划项](#计划项)
+    - [点云去噪工具](#点云去噪工具)
+    - [生成拟合曲面工具](#生成拟合曲面工具)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+# 2021年一季度版本
+## 已完成
+### 交互绘制截面并切割点云功能
+- 形式：HDevelop界面
+- 模块：测量(3D)
+- 功能：显示3D点云，使用鼠标绘制线段生成平面，返回该平面切割后的点云
+### 区域外圈生成轮廓功能
+- 形式：HDevelop脚本
+- 模块：测量(2.5D)、
+- 功能：生成区域外部紧邻像素构成的轮廓
+### 路径计算和偏移功能
+- 形式：HDevelop脚本
+- 模块：机器人
+- 功能：在XYZ图上绘制轮廓，并根据设置的位姿生成方式生成路径姿态，并且可以设置偏移方向来移动路径
+### 第三方库配置例程
+- 形式：C++界面
+- 模块：公共 
+- 功能：基于CMake配置Halcon、QT、PCL、OpenCV、GoogleTest相关库的例程
+### 点云向柱面投影功能
+- 形式：HDevelop脚本
+- 模块：测量(3D)
+- 功能：基于给定的柱面轴和半径，将侧面数据卷曲成圆柱或者将圆柱展开为侧面数据
+### 提取点云边缘工具
+- 形式：HDevelop脚本
+- 模块：测量(3D)
+- 功能：基于设定的边缘角度提取点云边缘
+### 在线引导例程
+- 形式：HDevelop脚本
+- 模块：机器人
+- 功能：在线式引导例程，用于焊缝跟踪
+### 正向投影测量工具
+- 形式：HDevelop脚本
+- 模块：预处理
+- 功能：基于设定的参数将点云投影为XYZ图像
+### CAD路径偏移功能
+- 形式：HDevelop脚本
+- 模块：机器人
+- 功能：基于设定的偏移方向和距离，对标准几何形状的CAD轮廓进行偏移
+### 点云填补工具
+- 形式：HDevelop脚本
+- 模块：预处理
+- 功能：基于设定的填补方式，对XYZ图数据缺失的部分进行数据修补
+# 2021年二季度版本
+## 已完成
+## 进行中
+### 简易激光三角法标定工具
+- 形式：HDevelop界面
+- 模块：相机标定
+- 功能：可交互式的2D相机+线激光器配合Halcon标定板的激光三角测量标定工具
+- 状态：等待验收
+### 点云自动配准工具
+- 形式：C++界面
+- 模块：匹配
+- 功能：界面式的点云配准工具，可以选择点云和设置匹配参数，并且导入和输出配准结果
+- 状态：开发中
+### 相机采图工具
+- 形式：C++界面
+- 模块：采集演示
+- 功能：针对常用3D相机进行界面设置和采集演示
+- 状态：归属SVB开发序列，等待上游更新
+## 计划项
+### 点云去噪工具
+- 形式：HDevelop脚本
+- 模块：预处理
+- 功能：基于测量需求对点云噪声进行去除
+### 生成拟合曲面工具
+- 形式：HDevelop脚本
+- 模块：测量(3d)
+- 功能：针对选取的点云数据基于设定的曲面类型进行拟合，返回拟合参数和曲面数据
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/DH-Algorithm-Group-Development/DH-Algorithm-Group-Development.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
