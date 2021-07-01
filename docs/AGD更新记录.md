@@ -13,12 +13,14 @@
 - 形式：HDevelop脚本
 - 模块：测量(2.5D)、
 - 功能：生成区域外部紧邻像素构成的轮廓
-- 
+![image](https://user-images.githubusercontent.com/47802547/124056323-0de4ae80-da58-11eb-83b7-ebceff97e7ec.png)
+![image](https://user-images.githubusercontent.com/47802547/124056344-1937da00-da58-11eb-8cd3-1dce7f9a0445.png)
 
 #### [新功能]路径计算和偏移-[王振鹏]
 - 形式：HDevelop脚本
 - 模块：机器人
 - 功能：在XYZ图上绘制轮廓，并根据设置的位姿生成方式生成路径姿态，并且可以设置偏移方向来移动路径
+![image](https://user-images.githubusercontent.com/47802547/124056390-3bc9f300-da58-11eb-8fc2-183c362ea76d.png)
 
 #### [新功能]第三方库配置例程-[王振鹏]
 - 形式：C++界面
@@ -29,11 +31,14 @@
 - 形式：HDevelop脚本
 - 模块：测量(3D)
 - 功能：基于给定的柱面轴和半径，将侧面数据卷曲成圆柱或者将圆柱展开为侧面数据
+![image](https://user-images.githubusercontent.com/47802547/124056527-7895ea00-da58-11eb-98ef-c99f9f750c56.png)
+![image](https://user-images.githubusercontent.com/47802547/124056548-8186bb80-da58-11eb-800b-c8ccdc338c06.png)
 
 #### [新功能]提取点云边缘-[王振鹏]
 - 形式：HDevelop脚本
 - 模块：测量(3D)
 - 功能：基于设定的边缘角度提取点云边缘
+![image](https://user-images.githubusercontent.com/47802547/124056585-96634f00-da58-11eb-80b3-1fa41841753d.png)
 
 #### [新功能]在线引导例程-[王振鹏]
 - 形式：HDevelop脚本
@@ -44,16 +49,15 @@
 - 形式：HDevelop脚本
 - 模块：预处理
 - 功能：基于设定的参数将点云投影为XYZ图像
-
-#### [新功能]CAD路径偏移-[王振鹏]
-- 形式：HDevelop脚本
-- 模块：机器人
-- 功能：基于设定的偏移方向和距离，对标准几何形状的CAD轮廓进行偏移
+![image](https://user-images.githubusercontent.com/47802547/124056960-3e791800-da59-11eb-8562-2dd5fa3f1f69.png)
+![image](https://user-images.githubusercontent.com/47802547/124056975-43d66280-da59-11eb-8168-c952af27dee4.png)
 
 #### [新功能]点云图像填补-[郭佼]
 - 形式：HDevelop脚本
 - 模块：预处理
 - 功能：基于设定的填补方式，对XYZ图数据缺失的部分进行数据修补
+![image](https://user-images.githubusercontent.com/47802547/124057743-a4b26a80-da5a-11eb-99a8-3c99cf7fb00c.png)
+![image](https://user-images.githubusercontent.com/47802547/124057961-0672d480-da5b-11eb-8981-cf6135998ed7.png)
 
 ## 2021年二季度版本
 ### 已完成
@@ -62,6 +66,7 @@
 - 形式：HDevelop界面
 - 模块：相机标定
 - 功能：可交互式的2D相机+线激光器配合Halcon标定板的激光三角测量标定工具
+![image](https://user-images.githubusercontent.com/47802547/124058304-b5171500-da5b-11eb-8a1c-c03fd306b055.png)
 
 #### [新功能]多相机标定工具-[王振鹏]
 - 形式：HDevelop界面
@@ -72,6 +77,7 @@
 - 形式：C++截面
 - 模块：参数计算
 - 功能：根据不同的方案类型，输入部分精度，生成机器人方案整体精度
+![image](https://user-images.githubusercontent.com/47802547/124062055-a54eff00-da62-11eb-8d0d-4d781bac536d.png)
 
 #### [新功能]点云自动配准工具-[郭佼]
 - 形式：C++界面
